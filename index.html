@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>IMC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <form id="formulario">
+    <section class="hero">
+      <div class="hero-body">
+
+        <h1 class="title has-text-centered has-text-black">O Calculador de IMC</h1>
+
+        <div class="field">
+          <label class="label">Peso - kg</label>
+          <div class="control has-icons-left">
+            <input class="input" type="number" placeholder="64" id="peso" autocomplete="off">
+            <span class="icon is-small is-left">
+              <i class="fas fa-weight"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Altura - cm</label>
+          <div class="control has-icons-left">
+            <input class="input" type="number" placeholder="172" id="altura" autocomplete="off">
+            <span class="icon is-small is-left">
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">IMC</label>
+          <div class="control">
+            <input class="input" type="number" id="imc" disabled="disabled">
+          </div>
+        </div>
+
+        <div class="field">
+          <p class="control">
+            <button type="button" onclick="calcular()" class="button is-success">
+              calcular
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+  </form>
+</body>
+
+</html>
